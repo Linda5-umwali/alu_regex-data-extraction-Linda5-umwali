@@ -26,7 +26,7 @@ you can use that text as the input for testing.
 
 OUTPUT:
 Emails: ['umwalinda@gmail.com']
-URLs: ['https://www.LU.com, https://blog.LU.org/page']
+URLs: ['https://www.LU.com', 'https://blog.LU.org/page']
 Phone number: ['(250)786-7890']
 Hashtags: ['#umwli, #WebDevLife']
 Times" ['2:30 AM, 14:30 PM']
