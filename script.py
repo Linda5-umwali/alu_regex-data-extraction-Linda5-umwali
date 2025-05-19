@@ -21,3 +21,6 @@ if not phones:
 else:
     print("Phone Numbers:", phones)
 
+# Hashtag regex
+hashtags = re.findall(r'#\w+', text)
+print("Hashtags:", hashtags)
