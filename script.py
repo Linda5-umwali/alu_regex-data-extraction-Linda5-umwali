@@ -24,3 +24,7 @@ else:
 # Hashtag regex
 hashtags = re.findall(r'#\w+', text)
 print("Hashtags:", hashtags)
+
+#Time regex
+times = re.findall(r'\b\d{1,2}:\d{2}(?:\s?[APap][Mm])?\b', text)
+print("Times:", times)
