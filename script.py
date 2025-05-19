@@ -17,7 +17,7 @@ print("URLs:", urls)
 phones = re.findall(r'\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}', text)
 
 if not phones:
-    print("⚠️ No valid phone numbers found. Please check your input.")
+    print("No valid phone numbers found. Please check your input.")
 else:
     print("Phone Numbers:", phones)
 
@@ -28,3 +28,6 @@ print("Hashtags:", hashtags)
 #Time regex
 times = re.findall(r'\b\d{1,2}:\d{2}(?:\s?[APap][Mm])?\b', text)
 print("Times:", times)
+
+if not any([emails, urls, phones, hashtags, times]):
+    print("No recognizable data found in the input.")
