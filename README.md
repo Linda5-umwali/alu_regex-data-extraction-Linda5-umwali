@@ -1,12 +1,10 @@
 Project Name: alu_regex-data-extraction-Linda5-umwali
 
-Project description:This is a simple web application built using HTML, CSS, and JavaScript to extract structured data from unstructured text using Regular Expressions (Regex).
+Project description:This is a simple project built using Python to extract structured data from unstructured text using Regular Expressions (Regex).
+The app allows user to extracts specific types of data such as email addresses, phone numbers, URLs, and hashtags.
+This project was built as part of a regex data extraction assignment to demonstrate real-world use of pattern matching and text analysis.
 
-The app allows users to paste any block of text and, with one click, it extracts specific types of data such as email addresses, phone numbers, URLs, and hashtags.
-
-This project was built as part of a regex data extraction assignment to demonstrate real-world use of pattern matching and text analysis with JavaScript.
-
-Types of data the app extracts: Email addresses, URLs, Phone numbers, Hashtags
+Types of data the app extracts: Email addresses, URLs, Phone numbers, Hashtags, and Time.
 
 How to open and use the web page: Open index.html in a browser
 
