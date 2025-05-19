@@ -12,3 +12,12 @@ print("Emails:", emails)
 # URL regex
 urls = re.findall(r'https?://[^\s]+', text)
 print("URLs:", urls)
+
+# Phone number regex
+phones = re.findall(r'\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}', text)
+
+if not phones:
+    print("⚠️ No valid phone numbers found. Please check your input.")
+else:
+    print("Phone Numbers:", phones)
+
