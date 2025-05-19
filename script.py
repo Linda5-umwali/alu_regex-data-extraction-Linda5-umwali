@@ -6,16 +6,15 @@ text = input("Enter the text you want to extract data from:\n")
 # Regex patterns below
 
 # Email regex
-emails = re.findall(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+', text)
+emails = re.findall(r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b', text)
 print("Emails:", emails)
 
 # URL regex
-urls = re.findall(r'https?://[^\s]+', text)
+urls = re.findall(r'(?:https?://)?(?:www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:/[^\s]*)?', text)
 print("URLs:", urls)
 
 # Phone number regex
-phones = re.findall(r'\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}', text)
-
+phones = re.findall(r'\b(?:\(\d{3}\)\s?|\d{3}[-.])\d{3}[-.]\d{4}\b', text)
 if not phones:
     print("No valid phone numbers found. Please check your input.")
 else:
